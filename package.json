@@ -15,7 +15,9 @@
   "author": "Aditya Kumar Mandal",
   "license": "ISC",
   "dependencies": {
+    "alert": "^5.0.10",
     "axios": "^0.21.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "popups": "^1.1.3"
   }
 }
