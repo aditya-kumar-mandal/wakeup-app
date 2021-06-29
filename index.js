@@ -15,9 +15,8 @@ server.listen(port, () => {
     console.log("\nrunnning on http://localhost:3000\n");
     
 });
-
 server.get("/", (req, res) => {
-    console.log("/");
+ 
     res.sendFile(path.join(__dirname, "/index.html"));
 });
 
@@ -43,6 +42,7 @@ server.post("/submit", (req, res) => {
             }
         });
         res.send("added");
+        console.log("added");
     }
 });
 
