@@ -1,0 +1,19 @@
+{
+  "name": "wakeup-heroku",
+  "version": "1.0.0",
+  "description": "It prevents heroku dynou from sleeping by calling it every 30 minutes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "heroku",
+    "dyno",
+    "coffee"
+  ],
+  "author": "Aditya Kumar Mandal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
