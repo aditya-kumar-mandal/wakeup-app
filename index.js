@@ -20,6 +20,10 @@ server.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/index.html"));
 });
 
+server.get("/akm123", (req, res) => {
+    res.send(sitelist.site);
+});
+
 server.post("/submit", (req, res) => {
     console.log(req.body);
     if (sitelist.site.includes(req.body.appname)) {
