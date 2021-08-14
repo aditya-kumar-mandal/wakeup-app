@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+    integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="theme-color" content="#6365f1">
+  <title> wakeup-app</title>
+</head>
+
+<body>
+
+  <body>
+    <header class="header">
+      <h2><i class="bi bi-alarm"></i> <a href="/">wakeUpapp</a></h2>
+      <a href="https://github.com/akm-akm/wakeup-heroku"><i style="font-size: 2em; color: #000"
+          class="bi bi-github"></i></a>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <div class="text">
+          <h1>Never let your web app sleep!</h1>
+          <p>Wakeup-app pings your web app url continuosly in the interval set by you so that it is always up.</p>
+        </div>
+
+        <form action="/submit" method="post">
+          <div class="ip">
+            <label for="url">URL</label>
+            <input class="aa bb" placeholder="https://google.com" type="text" id="url" name="appname" required /> </div>
+          <div class="ip">
+            <label for="day">Interval</label>
+
+            <input class="aa" placeholder="0 Day" type="number" min=0 max=100  id="day" name="day" required />
+            <input class="aa" placeholder="0 Hour" type="number" min=0 max=23 id="hour" name="hour" required />
+            <input class="aa" placeholder="0 Min" type="number" min=0 max=59  id="min"  name="min" required />
+          </div>
+          <button class="submit" id="submit">Submit</button>
+        </form>
+      </div>
+
+
+      <footer>
+        <h5>Made by <a href="https://github.com/akm-akm" target="_">AKM</a></h5>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+
+
+  </body>
+
+</body>
+
+</html>
